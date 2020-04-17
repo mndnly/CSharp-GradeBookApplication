@@ -19,7 +19,7 @@ namespace GradeBook.GradeBooks
             // ListOfStudents
             if (Students.Count < 5)
                 throw new InvalidOperationException();
-            return 'F';
+            return 'D';
         }
     }
 }
