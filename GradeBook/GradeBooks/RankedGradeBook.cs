@@ -26,6 +26,7 @@ namespace GradeBook.GradeBooks
             var list = orderByDescendingGrade.ToList();
             // now 'orderByDescendingGrade' is a sorted list of grades with highest grades on top
             var noOfStudentsToDrop = (int)Math.Ceiling(Students.Count * 0.2);
+
             if (Students.Count < 5)
                 throw new InvalidOperationException("Ranked grading requires at least 5 students.");
             if (averageGrade >= list[noOfStudentsToDrop - 1])
